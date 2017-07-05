@@ -29,58 +29,68 @@ header {
   margin-bottom: 24px;
 }
 
-section {
-  margin: -5px;
-}
-section .menu {
+.menu {
   width: 25%;
 }
-section .menu ul li {
+.menu ul li {
   list-style-type: none;
   line-height: 2.5em;
   border-bottom: 1px solid #EBEBEB;
   transition: all ease .15s;
   padding: 0 8px;
 }
-section .menu ul li:hover {
+.menu ul li:hover {
   background: #EBEBEB;
   color: #000;
 }
-section .main {
+
+.main {
   width: 50%;
   text-align: center;
 }
-section .main .inner-main h1,
-section .main .inner-main p {
+.main .inner-main h1,
+.main .inner-main p {
   margin-bottom: 2em;
   text-align: left;
 }
-section .main .inner-main h1 {
+.main .inner-main h1 {
   margin-top: 2em;
 }
-section .main img {
+.main img {
   width: calc(100% - 10px);
 }
-section .advertising {
+
+.advertising {
   width: 25%;
 }
-section .advertising .inner-advertising {
-  padding: 11px 8px;
+.advertising .inner-advertising {
+  padding: 24px 8px;
   background: #CDF0F6;
 }
-section .advertising .inner-advertising h3 {
+.advertising .inner-advertising h3 {
   margin: 1em 0 1.5em 0;
   text-align: left;
 }
-section .menu,
-section .main,
-section .advertising {
+
+.menu,
+.main,
+.advertising {
   float: left;
 }
-section .inner-menu,
-section .inner-main,
-section .inner-advertising {
+
+.inner-menu,
+.inner-main,
+.inner-advertising {
   margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu,
+  .main,
+  .advertising {
+    float: none;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
